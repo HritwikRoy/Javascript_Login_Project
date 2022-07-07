@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            color: white;
+            background-color: black;
+        }
+    </style>
+  
+</head>
+<body background="red">
+    <form action="">
+
+        username : <input type="text" id='f1' name='t'>
+        <br> <br>
+        password : <input type="password" id='f2' name='t'>
+        <button  onclick="log()">Submit</button>
+
+    </form>
+
+<script type="text/javascript">
+
+
+
+    function log(){
+        
+
+        var u=document.querySelectorAll('form input')[0].value;
+        var p=document.querySelectorAll('form input')[1].value;
+        
+        if(u=="root" && p=="pass"){
+            alert("log in");
+        }
+        else{
+            alert("not log in");
+        }
+        
+    }
+
+        
+        
+        
+</script>
+
+
+</body>
+</html>
